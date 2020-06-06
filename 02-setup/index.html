@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div id="root"></div>
+	<div class="title">React tutorials</div>
+	<img src="http://lorempixel.com/400/200">
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<script>
+		const todos = [
+			'Go to market',
+			'Buy food',
+			'Make dinner'
+		];
+		const [li1, li2, li3] = todos;
+		const Li1 = React.createElement('li', null, li1);
+		const Li2 = React.createElement('li', null, li2);
+		const Li3 = React.createElement('li', null, li3);
+
+		const todoList = React.createElement('ul',null,Li1, Li2, Li3) 
+		const Hello = React.createElement('div', null, 'Hello Nguyen Bao Hieu');
+		const root = document.getElementById('root');
+		const Title = React.createElement('div',{
+			className: 'title'
+		}, 'React tutorials');
+		const Image = React.createElement('img',{
+			src: 'http://lorempixel.com/400/200'
+		});
+		const App = React.createElement('div',null,todoList, Hello, Title, Image)
+		ReactDOM.render(App,root);
+	</script>	
+</body>
+</html>
