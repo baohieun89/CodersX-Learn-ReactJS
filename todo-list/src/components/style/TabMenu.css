@@ -1,0 +1,28 @@
+.TabMenu{
+  /* width: 1218px; */
+  display: flex;
+  justify-content: space-around;
+  /* flex-flow: row wrap; */
+  padding: 0;
+  margin: 0;
+}
+
+.Item{
+  border: 1px solid rgba(221, 221, 221, 0.7);
+  width: 227px;
+  height: 134.01px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.icon{
+  width: 48px;
+  height: 48px;
+
+}
+.Home{
+  color: #8CDC52
+}
